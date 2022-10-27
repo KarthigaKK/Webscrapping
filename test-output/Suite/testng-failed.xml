@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="vnpalayam15a"/>
+    <parameter name="url" value="https://login.yahoo.com/"/>
+    <parameter name="email" value="logu_rangan@yahoo.com"/>
+    <classes>
+      <class name="annotations.ParameterTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="logout"/>
+          <include name="yahooLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- annotations.ParameterTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
